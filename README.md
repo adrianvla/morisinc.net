@@ -8,7 +8,7 @@ My portfolio website
 ### [GSAP](https://greensock.com/gsap/)
 ### [jQuery](https://jquery.com/)
 ### [Barba.js](https://barba.js.org/)
-### [Simplex noise](https://github.com/jwagner/simplex-noise.js/)
+### [Modified Simplex noise](https://github.com/jwagner/simplex-noise.js/)
 ### [Modified Spline.js](https://github.com/gdenisov/cardinal-spline-js)
 
 ## Fonts:

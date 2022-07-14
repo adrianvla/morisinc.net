@@ -1,6 +1,6 @@
 {
-    "name": "Locomotive Scroll",
-    "short_name": "Locomotive Scroll",
+    "name": "Portfolio - Morisinc",
+    "short_name": "Portfolio",
     "icons": [
         {
             "src": "dist/images/favicons/android-chrome-144x144.png",
@@ -8,7 +8,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#151515",
+    "background_color": "#151515",
     "display": "standalone"
 }

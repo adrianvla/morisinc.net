@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>PAGE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" sizes="152x152" href="dist/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="dist/images/favicons/safari-pinned-tab.svg" color="#000000">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="../main.css">
+	<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
+
+</head>
+
+<body data-barba="wrapper">
+	<noscript>YOU NEED TO ENABLE JAVASCRIPT TO VIEW THIS WEBSITE</noscript>
+	<div class="load-images">
+		<img src="https://i.picsum.photos/id/690/400/700.jpg?hmac=VT52V06Q6fcZ-HJqv4zAavTGlU7YvyjOEKelJHqD77w" alt="">
+		<img src="https://i.picsum.photos/id/476/500/600.jpg?hmac=ik8LbDKdZhibswv81rzwCVyEyU89DNJPLepVCZ9rQAY" alt="">
+		<img src="https://i.picsum.photos/id/365/500/600.jpg?hmac=NVypG3sQyFl2QEb02Yg0yHW5qrTiG1Fy3nLM6dnIG4E" alt="">
+	</div>
+	<div class="noise-c">
+		<canvas id="bgcanv"></canvas>
+	</div>
+	<svg class="distort">
+		<filter id="distortionFilter">
+			<feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="5" seed="2" stitchTiles="noStitch" x="0%"
+				y="0%" width="100%" height="100%" result="noise" />
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%"
+				y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse" />
+		</filter>
+		<filter id="blurFilter">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="0,0" />
+		</filter>
+	</svg>
+	<div class="follower-c f">
+		<span>Check this out!</span>
+		<div class="follower"></div>
+	</div>
+	<div class="f-c-grab">
+		<span>GRAB</span>
+		<div class="chev-l">
+			<div class="_1"></div>
+			<div class="_2"></div>
+		</div>
+		<div class="chev-r">
+			<div class="_1"></div>
+			<div class="_2"></div>
+		</div>
+	</div>
+	<div class="f-image">
+		<div class="">
+			<img src="">
+		</div>
+	</div>
+	<!--Will Not Change On a href-->
+	<div class="trans-c">
+		<div class="mq-c mq-trans mq-2"><span class="marquee _1"></span><span class="marquee"></span><span
+				class="marquee"></span><span class="marquee"></span></div>
+		<div class="mq-c mq-trans mq-1"><span class="marquee _1"></span><span class="marquee"></span><span
+				class="marquee"></span><span class="marquee"></span></div>
+		<div class="mq-c mq-trans mq-2"><span class="marquee _1"></span><span class="marquee"></span><span
+				class="marquee"></span><span class="marquee"></span></div>
+	</div>
+	<div class="loader-c"></div>
+	<div class="menu-c">
+		<svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="path" stroke="#000" stroke-width="2px" dur="10s" vector-effect="non-scaling-stroke"
+				d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
+		</svg>
+		<div class="menu">
+			<div class="mi tfb">
+				<span>
+					<a href="../" data-hover>INDEX</a>
+				</span>
+			</div>
+			<div class="mi tfb">
+				<span>
+					<a href="../?st=.wks" data-hover>WORK</a>
+				</span>
+			</div>
+			<div class="mi tfb">
+				<span>
+					<a href="../about" data-hover>ABOUT</a>
+				</span>
+			</div>
+
+		</div>
+	</div>
+	<div class="menu-burger" data-hover>
+		<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+			<path d="" stroke="#c1c1c140" stroke-width="1" fill="#00000000"></path>
+		</svg>
+		<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+			<path d="" stroke="#c1c1c1" stroke-width="1" fill="#00000000"></path>
+		</svg>
+		<div class="_1"></div>
+		<div class="_2"></div>
+		<div class="_3">MENU</div>
+	</div>
+
+    <div class="change-browser">
+        
+    </div>
+	<div class='scroll-c' data-scroll-container>
+		<main data-barba="container" data-barba-namespace="project">
+			<div class="ww">HERO-TITLE</div>
+			<div class="v2 sec" data-scroll-section>
+				<div></div>
+				<div class="txt-sec" data-scroll>
+					<h1>HEADER 1</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab voluptas architecto eos sequi ipsa
+						dolorum deleniti assumenda vel quisquam, perspiciatis sed, vitae qui, animi quas nobis atque
+						doloremque et. Iusto! [btn]pressme[/btn]
+					</p>
+					<h2>HEADER 2</h2>
+				</div>
+				<div class="image-sec at-l" data-scroll>
+					<div>
+
+						<div><img src="https://picsum.photos/1000/700" alt=""><span>Image 1000x700 aligned left</span>
+						</div>
+					</div>
+				</div>
+				<div class="txt-sec" data-scroll>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor libero similique, illo possimus
+						doloribus obcaecati saepe, earum sapiente at hic delectus odio magni itaque error! Labore quae
+						harum iste minus?</p>
+				</div>
+				<div class="image-sec at-r" data-scroll>
+					<div>
+
+						<div><img src="https://picsum.photos/1000/700" alt=""><span>Image 1000x700 aligned right</span>
+						</div>
+					</div>
+				</div>
+				<div class="image-sec at-c" data-scroll>
+					<div>
+						<div><img src="https://picsum.photos/1000/700" alt=""><span>Image 1000x700 aligned center</span>
+						</div>
+					</div>
+				</div>
+				<div class="txt-sec" data-scroll>
+					<h1>Different supported styles</h1>
+					<p> Paragraph p
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quam sequi dolorem reprehenderit
+						tenetur earum incidunt assumenda fuga molestiae! Praesentium, asperiores! Obcaecati veniam
+						quisquam enim harum iure assumenda eaque sit?
+					</p>
+					<pre>
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int main()
+{
+	char pass[20], e_pass[20];
+	int num1, num2, sum;
+	printf("Create a Password: ");
+	scanf("%s", pass);
+	printf("\nEnter any two number to Add: ");
+	scanf("%d %d", &num1, &num2);
+	printf("\nEnter password to see the Result: ");
+	scanf("%s", e_pass);
+	if(!strcmp(pass, e_pass))
+	{
+		sum = num1 + num2;
+		printf("\n%d + %d = %d", num1, num2, sum);
+	}
+	else
+		printf("\nSorry! You entered a Wrong Password");
+	getch();
+	return 0;
+}
+					</pre>
+					<h1>Header 1</h1>
+					<h2>Header 2</h2>
+					<h3>Header 3</h3>
+					<h4>Header 4</h4>
+					<p>
+						This supports other styles like <i>Italic</i>, <b>Bold</b>, and <s>Strikethrough</s>
+					</p>
+				</div>
+				<div class="image-sec at-r multiple" data-scroll data-hover-grab>
+					<div class="inner">
+						<div>
+							<img src="https://picsum.photos/500/700" alt="">
+							<span>1, image 500x700</span>
+						</div>
+
+						<div>
+							<img src="https://picsum.photos/700/700" alt="">
+							<span>2, image 700x700</span>
+						</div>
+
+						<div>
+							<img src="https://picsum.photos/650/700" alt="">
+							<span>3, image 650x700</span>
+						</div>
+
+						<div>
+							<img src="https://picsum.photos/500/300" alt="">
+							<span>4, image 500x300</span>
+						</div>
+
+						<div>
+							<img src="https://picsum.photos/400/800" alt="">
+							<span>5, image 400x800</span>
+						</div>
+
+						<div>
+							<img src="https://picsum.photos/550/600" alt="">
+							<span>6, image 550x600</span>
+						</div>
+					</div>
+				</div>
+				<div data-scroll data-scroll-id="progress" class="pel"></div>
+			</div>
+
+		</main>
+
+	</div>
+
+
+
+	<script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+	<script src="../simplex-noise.js"></script>
+	<script src="../spline.js"></script>
+	<script nomodule
+		src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+		crossorigin="anonymous"></script>
+	<script src="../l.js"></script>
+	<script src="../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Math Utilities</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" sizes="152x152" href="dist/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="dist/images/favicons/safari-pinned-tab.svg" color="#000000">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="../main.css">
+	<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
+
+</head>
+
+<body data-barba="wrapper">
+	<noscript>YOU NEED TO ENABLE JAVASCRIPT TO VIEW THIS WEBSITE</noscript>
+	<div class="load-images"></div>
+	<div class="noise-c">
+		<canvas id="bgcanv"></canvas>
+	</div>
+	<svg class="distort">
+		<filter id="distortionFilter">
+			<feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="5" seed="2" stitchTiles="noStitch" x="0%"
+				y="0%" width="100%" height="100%" result="noise" />
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%"
+				y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse" />
+		</filter>
+		<filter id="blurFilter">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="0,0" />
+		</filter>
+	</svg>
+	<div class="follower-c f">
+		<span>Check this out!</span>
+		<div class="follower"></div>
+	</div>
+	<div class="f-c-grab">
+		<span>GRAB</span>
+		<div class="chev-l">
+			<div class="_1"></div>
+			<div class="_2"></div>
+		</div>
+		<div class="chev-r">
+			<div class="_1"></div>
+			<div class="_2"></div>
+		</div>
+	</div>
+	<div class="f-image">
+		<div class="">
+			<img src="">
+		</div>
+	</div>
+	<!--Will Not Change On a href-->
+	<div class="trans-c">
+		<div class="mq-c mq-trans mq-2"><span class="marquee _1"></span><span class="marquee"></span><span
+				class="marquee"></span><span class="marquee"></span></div>
+		<div class="mq-c mq-trans mq-1"><span class="marquee _1"></span><span class="marquee"></span><span
+				class="marquee"></span><span class="marquee"></span></div>
+		<div class="mq-c mq-trans mq-2"><span class="marquee _1"></span><span class="marquee"></span><span
+				class="marquee"></span><span class="marquee"></span></div>
+	</div>
+	<div class="loader-c"></div>
+	<div class="menu-c">
+		<svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path class="path" stroke="#000" stroke-width="2px" dur="10s" vector-effect="non-scaling-stroke"
+				d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
+		</svg>
+		<div class="menu">
+			<div class="mi tfb">
+				<span>
+					<a href="../" data-hover>INDEX</a>
+				</span>
+			</div>
+			<div class="mi tfb">
+				<span>
+					<a href="../?st=.wks" data-hover>WORK</a>
+				</span>
+			</div>
+			<div class="mi tfb">
+				<span>
+					<a href="../about" data-hover>ABOUT</a>
+				</span>
+			</div>
+
+		</div>
+	</div>
+	<div class="menu-burger" data-hover>
+		<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+			<path d="" stroke="#c1c1c140" stroke-width="1" fill="#00000000"></path>
+		</svg>
+		<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+			<path d="" stroke="#c1c1c1" stroke-width="1" fill="#00000000"></path>
+		</svg>
+		<div class="_1"></div>
+		<div class="_2"></div>
+		<div class="_3">MENU</div>
+	</div>
+
+    <div class="change-browser">
+        
+    </div>
+	<div class='scroll-c' data-scroll-container>
+		<main data-barba="container" data-barba-namespace="project">
+			<div class="ww">Math Utils</div>
+			<div class="v2 sec" data-scroll-section>
+				<div></div>
+				<div class="txt-sec" data-scroll>
+					<h1>My Take at wolfram (not really)</h1>
+					<p>My little apps will help you in your math homework😊.
+						I've made math apps that will help you in Algebra.
+					</p>
+					<ul>
+						<li>3x3 Matrix determinant calculator is [btn link="https://www.morisinc.net/matrixcalc/"]here[/btn]</li>
+						<li>Prime number game is [btn link="https://game.morisinc.net/prime/"]here[/btn]</li>
+						<li>Square Matrix multiplier is [btn link="https://www.morisinc.net/matrixmult/"]here[/btn]</li>
+						<li>GCD (PGDC) calculator using Euclide's method with steps is [btn link="https://www.morisinc.net/pgdc/"]here[/btn]</li>
+						<li>Equation resolver with 3 variables using Gauss' method with steps is [btn link="https://www.morisinc.net/gausscalculator/"]here[/btn]</li>
+						<li>Kind of function grapher is [btn link="https://graph.morisinc.net/"]here[/btn]</li>
+					</ul>
+				</div>
+				<div data-scroll data-scroll-id="progress" class="pel"></div>
+			</div>
+
+		</main>
+
+	</div>
+
+
+
+	<script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+	<script src="../simplex-noise.js"></script>
+	<script src="../spline.js"></script>
+	<script nomodule
+		src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+		crossorigin="anonymous"></script>
+	<script src="../l.js"></script>
+	<script src="../main.js"></script>
+</body>
+
+</html>

@@ -3,13 +3,15 @@ My portfolio website
 
 # [Check it out here!](https://www.morisinc.net)
 
-## The website uses:
+## This website uses:
 ### [Locomotive scroll](https://github.com/locomotivemtl/locomotive-scroll)
 ### [GSAP](https://greensock.com/gsap/)
 ### [jQuery](https://jquery.com/)
 ### [Barba.js](https://barba.js.org/)
 ### [Modified Simplex noise](https://github.com/jwagner/simplex-noise.js/)
 ### [Modified Spline.js](https://github.com/gdenisov/cardinal-spline-js)
+
+### Analytics & DNS
 
 #### [Yandex Metrika](https://metrica.yandex.ru/)
 #### [CloudFlare](https://www.cloudflare.com/)

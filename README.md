@@ -11,8 +11,8 @@ My portfolio website
 ### [Modified Simplex noise](https://github.com/jwagner/simplex-noise.js/)
 ### [Modified Spline.js](https://github.com/gdenisov/cardinal-spline-js)
 
-### [Yandex Metrika](https://metrica.yandex.ru/)
-### [CloudFlare](https://www.cloudflare.com/)
+#### [Yandex Metrika](https://metrica.yandex.ru/)
+#### [CloudFlare](https://www.cloudflare.com/)
 
 ## Fonts:
 ### [Neue Machina by Pangram Pangram](https://pangrampangram.com/products/neue-machina-collection)

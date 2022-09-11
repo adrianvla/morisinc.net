@@ -418,16 +418,16 @@ html.has-scroll-smooth {
 
 @font-face {
   font-family: MachinaITR;
-  src: url("https://cdn.morisinc.net/fonts/neue machina/ppneueMachina-inktrapregular.otf");
+  src: url("https://cdn.morisinc.net/fonts/neue machina/ppneuemachina-inktrapregular.otf");
 }
 @font-face {
   font-family: Machina;
-  src: url("https://cdn.morisinc.net/fonts/neue machina/ppneueMachina-plainregular.otf");
+  src: url("https://cdn.morisinc.net/fonts/neue machina/ppneuemachina-plainregular.otf");
 }
 
 @font-face {
     font-family: MachinaITRUB;
-    src: url("https://cdn.morisinc.net/fonts/neue machina/ppneueMachina-inktrapultrabold.otf");
+    src: url("https://cdn.morisinc.net/fonts/neue machina/ppneuemachina-inktrapultrabold.otf");
 }
 @font-face {
   font-family: GS;
